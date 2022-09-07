@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'printf "%o\n" $((5#$(echo $WATER | tr 'water' '01234') + 5#$(echo $STIR | tr 'stir.' '01234'))) | tr '01234567' 'bestchol''
+echo 'tail -n +2 | cut -f 1 | sort -n | uniq -c | sort -nr | rev | cut -d " " -f 1 | rev | head -n 11'
